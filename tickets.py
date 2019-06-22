@@ -28,7 +28,7 @@ while isOnSale == False:
 		driver.find_element_by_xpath(xpath)
 		logging.info('Tickets on sale')
 		isOnSale == True
-		client.messages.create(to="+447469940054", from_="+447481344819", body="Avengers Endgame tickets are now on sale!")
+		client.messages.create(to="", from_="+447481344819", body="Avengers Endgame tickets are now on sale!")
 		driver.quit()
 		break
 	except NoSuchElementException:
